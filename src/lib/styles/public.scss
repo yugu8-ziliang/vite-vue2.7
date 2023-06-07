@@ -1,0 +1,179 @@
+// 公共样式
+
+/*flex布局*/
+.flex_dom {
+  display: flex !important;
+  display: -webkit-box !important;
+  display: -webkit-flex !important;
+}
+
+.flex_column {
+  display: flex !important;
+  display: -webkit-box !important;
+  display: -webkit-flex !important;
+  flex-direction: column;
+  -webkit-flex-direction: column;
+}
+
+.flex_row_reverse {
+  display: flex !important;
+  display: -webkit-box !important;
+  display: -webkit-flex !important;
+  flex-direction: row-reverse;
+  -webkit-flex-direction: row-reverse;
+}
+
+.flex_item_between {
+  justify-content: space-between;
+  -webkit-justify-content: space-between;
+}
+
+.flex_item_around {
+  justify-content: space-around;
+  -webkit-justify-content: space-around;
+}
+
+.flex_item_justify_end {
+  justify-content: flex-end;
+  -webkit-justify-content: flex-end;
+}
+
+.flex_item_center {
+  justify-content: center;
+  -webkit-justify-content: center;
+}
+
+.flex_item_mid {
+  align-items: center;
+  -webkit-align-items: center;
+}
+
+.flex_item_start {
+  align-items: flex-start;
+  -webkit-align-items: flex-start;
+}
+
+.flex_item_end {
+  align-items: flex-end;
+  -webkit-align-items: flex-end;
+}
+
+.flex_item_stretch {
+  align-items: stretch;
+  -webkit-align-items: stretch;
+}
+
+.flex_wrap {
+  flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+}
+
+// 12px的字体至28px
+.fs12 {
+  font-size: 12px;
+}
+
+.fs14 {
+  font-size: 14px;
+}
+
+.fs16 {
+  font-size: 16px;
+}
+
+.fs18 {
+  font-size: 18px;
+}
+
+.fs20 {
+  font-size: 20px;
+}
+
+.fs22 {
+  font-size: 22px;
+}
+
+.fs24 {
+  font-size: 24px;
+}
+
+.fs26 {
+  font-size: 26px;
+}
+
+.fs28 {
+  font-size: 28px;
+}
+
+// el-tag 样式
+// 经营户
+.elTagbg1 {
+  color: #1a7fd9;
+  background-color: #e6f7ff;
+  border-color: rgba(26, 127, 217, 0.5);
+}
+
+// 采购商
+.elTagbg2 {
+  color: #df971a;
+  background-color: #fffbe6;
+  border-color: rgba(223, 151, 26, 0.5);
+}
+
+// 供货商
+.elTagbg3 {
+  color: #0ba198;
+  background-color: #e6fff9;
+  border-color: #0ba198;
+}
+
+// 非平台
+.elTagbg4 {
+  color: #dd4c4d;
+  background-color: #fff1f0;
+  border-color: rgba(221, 76, 77, 0.5);
+}
+
+.elTagbglist {
+  color: #248b39;
+  background-color: #f6ffed;
+  border-color: rgba(36, 139, 57, 0.5);
+}
+
+// 去掉样式
+li {
+  list-style: none;
+}
+
+// 显示省略号
+.ellipsisCell {
+  // width: 150px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+}
+
+.clearfix {
+  &:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+  }
+}
+.no-padding {
+  padding: 0px !important;
+}
+// 自适应表格滚动条设置
+.plTableBox {
+  width: auto;
+}
+// 表头背景色
+.has-gutter th {
+  background: rgba(0, 0, 0, 0.02) !important;
+  border-bottom: 1px solid #ebeef5 !important;
+}
