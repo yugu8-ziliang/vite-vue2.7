@@ -46,7 +46,7 @@ export default defineConfig({
     outDir,
     assetsDir,
     commonjsOptions: {
-      transformMixedEsModules: true,
+      // transformMixedEsModules: true,
     },
   },
   resolve: {
@@ -83,8 +83,8 @@ export default defineConfig({
     Unocss(),
     // ## https://github.com/jeddygong/vite-plugin-progress
     Progress(),
-    // ## https://github.com/yzydeveloper/vite-plugin-print-urls
-    PrintUrls(),
+    // ## https://github.com/yzydeveloper/vite-plugin-print-urls 导致无法触发热更新
+    // PrintUrls(),
     // ## https://github.com/vite-plugin/vite-plugin-commonjs/tree/main
     Commonjs(),
     // ## https://github.com/antfu/unplugin-vue-components
